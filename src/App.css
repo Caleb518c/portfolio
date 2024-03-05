@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #190A24;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 1%;
+}
+
+nav div img {
+  width: 3rem;
+  margin-right: 3%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  list-style-type: none;
+  padding: 1%;
+  margin-right: 1%;
+}
+
+nav li {
+  color: rgb(158, 138, 178);
+  transition: .3s;
+}
+
+nav li:hover {
+  color: white;
+}
+
+nav li:active {
+  color: white;
+}
+
+
+
+
+body {
+  background-image: url("background.png") ;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+section {
+  display: flex;
+  width: 1700px;
+}
+
+.intro div {
+  width: 40%;
+  padding: 10% 0 10% 10% ;
+}
+
+
+
+
+
+.intro img {
+  width: 600px;
+  height: 450px;
+  margin: 5%;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutText {
+  width: 40%;
+  padding: 10% 0 10% 10% ;
+}
+
+.largeSkillsContainer {
+  display: flex;
+  justify-content: center;
+}
+
