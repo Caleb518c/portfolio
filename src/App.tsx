@@ -5,7 +5,7 @@ import MenuDropdown from "./Components/MenuDropdown";
 
 function App() {
   return (
-    <>
+    <div id="home">
       <nav>
         <div>
           <img src="public\cat-svgrepo-com.svg" alt="logo" />
@@ -15,10 +15,10 @@ function App() {
         <MenuDropdown />
 
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </ul>
       </nav>
 
@@ -36,7 +36,7 @@ function App() {
           <img src="public\computer 3d image.png" alt="computer graphic" />
         </section>
 
-        <section className="about">
+        <section className="about" id="about">
           <div className="aboutText">
             <h1>About</h1>
             <p>
@@ -47,27 +47,109 @@ function App() {
             </p>
           </div>
           <div className="largeSkillsContainer">
-            <LargeSkillTile imgSrc="public\computerScreen.png" text="Web Development" />
-            <LargeSkillTile imgSrc="public\uxDesign.png" text="UI/UX Development & Design" />
-            <LargeSkillTile imgSrc="public\phone.png" text="App Development" />
+            <LargeSkillTile
+              imgSrc="/computerScreen.png"
+              text="Web Development"
+            />
+            <LargeSkillTile
+              imgSrc="/uxDesign.png"
+              text="UI/UX Development & Design"
+            />
+            <LargeSkillTile imgSrc="/phone.png" text="App Development" />
           </div>
           <div className="smallSkillsContainer">
-            <SmallSkillTile imgSrc="public\skillIcons\react.png" text="React.js" />
-            <SmallSkillTile imgSrc="public\skillIcons\nodejsLogo.png" text="Node.js" />
-            <SmallSkillTile imgSrc="public\skillIcons\jsLogo.png" text="Javascript" />
-            <SmallSkillTile imgSrc="public\skillIcons\tsLogo.png" text="Typescript" />
-            <SmallSkillTile imgSrc="public\skillIcons\htmlLogo.png" text="HTML" />
-            <SmallSkillTile imgSrc="public\skillIcons\cssLogo.png" text="CSS" />
-            <SmallSkillTile imgSrc="public\skillIcons\gitLogo.png" text="Git" />
-            <SmallSkillTile imgSrc="public\skillIcons\javaLogo.png" text="Java" />
-            <SmallSkillTile imgSrc="public\skillIcons\sqlLogo.png" text="SQL" />
-            <SmallSkillTile imgSrc="public\skillIcons\figmaLogo.png" text="Figma" />
-            <SmallSkillTile imgSrc="public\skillIcons\photoshopLogo.png" text="Photoshop" />
-            <SmallSkillTile imgSrc="public\skillIcons\illustratorLogo.png" text="Illustrator" />
+            <SmallSkillTile imgSrc="/skillIcons\react.png" text="React.js" />
+            <SmallSkillTile
+              imgSrc="/skillIcons\nodejsLogo.png"
+              text="Node.js"
+            />
+            <SmallSkillTile imgSrc="/skillIcons\jsLogo.png" text="Javascript" />
+            <SmallSkillTile imgSrc="/skillIcons\tsLogo.png" text="Typescript" />
+            <SmallSkillTile imgSrc="/skillIcons\htmlLogo.png" text="HTML" />
+            <SmallSkillTile imgSrc="/skillIcons\cssLogo.png" text="CSS" />
+            <SmallSkillTile imgSrc="/skillIcons\gitLogo.png" text="Git" />
+            <SmallSkillTile imgSrc="/skillIcons\javaLogo.png" text="Java" />
+            <SmallSkillTile imgSrc="/skillIcons\sqlLogo.png" text="SQL" />
+            <SmallSkillTile imgSrc="/skillIcons\figmaLogo.png" text="Figma" />
+            <SmallSkillTile
+              imgSrc="/skillIcons\photoshopLogo.png"
+              text="Photoshop"
+            />
+            <SmallSkillTile
+              imgSrc="/skillIcons\illustratorLogo.png"
+              text="Illustrator"
+            />
+          </div>
+        </section>
+
+        <section id="projects"></section>
+        <section id="contact" className="contact">
+          <h1>Contact</h1>
+          <div className="contactRow2">
+            <form action="submit">
+              <div className="contactContainer">
+                <form className="contactForm">
+                  <img
+                    src="contactImages/mail.png"
+                    alt="email icon"
+                    className="mailIcon"
+                  />
+                  <div>
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="What's your email?"
+                      required
+                    />
+                  </div>
+                </form>
+                <form className="contactForm">
+                  <img
+                    src="contactImages/profileIcon.png"
+                    alt="profile icon"
+                    className="profileIcon"
+                  />
+                  <div>
+                    <label htmlFor="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="What's your name?"
+                      required
+                    />
+                  </div>
+                </form>
+                <form className="messageForm">
+                  <img
+                    src="contactImages/pen.png"
+                    alt="pen icon"
+                    className="messageIcon"
+                  />
+                  <div>
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                      name="message"
+                      rows={5}
+                      placeholder="What do you want to say?"
+                      required
+                    />
+                  </div>
+                </form>
+                <button>Send</button>
+              </div>
+            </form>
+            <img
+              src="notificationIcons.png"
+              alt="notification icons"
+              className="notificationIcons"
+            />
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
 

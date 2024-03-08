@@ -13,6 +13,7 @@ section p {
 }
 
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,16 +45,21 @@ nav ul {
   margin-right: 1%;
 }
 
-nav li {
+nav a {
   color: rgb(158, 138, 178);
   transition: .3s;
+  text-decoration: none;
 }
 
-nav li:hover {
+nav a:visited {
+  color: rgb(158, 138, 178);
+}
+
+nav a:hover {
   color: white;
 }
 
-nav li:active {
+nav a:active {
   color: white;
 }
 
@@ -75,16 +81,18 @@ main {
 section {
   display: flex;
   width: 1700px;
+  border: solid red 1px;
+}
+
+.intro {
+  margin-top: 100px;
 }
 
 .intro div {
   width: 40%;
   padding: 10% 0 10% 10% ;
+
 }
-
-
-
-
 
 .intro img {
   width: 600px;
@@ -154,5 +162,113 @@ section {
 .smallSkillTile img {
   width: 75px;
   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h1 {
+  margin-left: 10%;
+}
+
+.contactRow2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificationIcons {
+  width: 800px;
+  margin-right: 150px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #483165;
+  border-radius: 30px;
+  width: 400px;
+  height: 550px;
+  padding: 5%;
+  box-sizing: border-box;
+  margin-left: 200px;
+  margin-top: 15px;
+}
+
+.contactForm {
+  display: flex;
+  align-items: center;
+  background-color: #2e1b43;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.mailIcon {
+height: 27px;
+}
+
+.profileIcon {
+  height: 35px;
+}
+
+.messageIcon {
+  height: 35px;
+  margin: 5px 0 0 0;
+}
+
+
+.contactForm div,
+.messageForm div {
+  margin-left: 5%;
+}
+
+.contactForm input {
+  all: unset;
+  width: 95%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.messageForm textArea {
+  all: unset;
+  width: 95%;
+  resize: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.messageForm {
+  display: flex;
+  background-color: #2e1b43;
+  border-radius: 10px;
+  padding: 3%;
+  height: 200px;
+}
+
+.contactContainer button{
+  border-radius: 30px;
+  width: 100%;
+  background-color: #190b25;
+  border: none;
+  color: white;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
