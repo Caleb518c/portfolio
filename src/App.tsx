@@ -1,7 +1,7 @@
 import "./App.css";
-import LargeSkillTile from "./Components/LargeSkillTile.tsx";
-import SmallSkillTile from "./Components/SmallSkillTile.tsx";
-import MenuDropdown from "./Components/MenuDropdown.tsx";
+import LargeSkillTile from "./Components/LargeSkillTile";
+import SmallSkillTile from "./Components/SmallSkillTile";
+import MenuDropdown from "./Components/MenuDropdown";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
               mollitia tempora.
             </p>
           </div>
-          <img src="public/computerGraphic.png" alt="computer graphic" />
+          <img src="public\computer 3d image.png" alt="computer graphic" />
         </section>
 
         <section className="about" id="about">
