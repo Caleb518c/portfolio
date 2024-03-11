@@ -8,7 +8,7 @@ function App() {
     <div id="home">
       <nav>
         <div>
-          <img src="public\cat-svgrepo-com.svg" alt="logo" />
+          <img src="cat-svgrepo-com.svg" alt="logo" />
           <p>Caleb Clapper | Portfolio</p>
         </div>
 
