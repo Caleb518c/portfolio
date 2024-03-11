@@ -1,7 +1,7 @@
 import "./App.css";
-import LargeSkillTile from "./Components/LargeSkillTile";
-import SmallSkillTile from "./Components/SmallSkillTile";
-import MenuDropdown from "./Components/MenuDropdown";
+import LargeSkillTile from "./Components/LargeSkillTile.tsx";
+import SmallSkillTile from "./Components/SmallSkillTile.tsx";
+import MenuDropdown from "./Components/MenuDropdown.tsx";
 
 function App() {
   return (
