@@ -33,7 +33,7 @@ function App() {
               mollitia tempora.
             </p>
           </div>
-          <img src="public\computer 3d image.png" alt="computer graphic" />
+          <img src="public/computerGraphic.png" alt="computer graphic" />
         </section>
 
         <section className="about" id="about">
