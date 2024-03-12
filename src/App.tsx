@@ -1,18 +1,43 @@
 import "./App.css";
 import LargeSkillTile from "./Components/LargeSkillTile";
 import SmallSkillTile from "./Components/SmallSkillTile";
-import MenuDropdown from "./Components/MenuDropdown";
+
+import logo from "/cat-svgrepo-com.svg";
+import downArrow from "/downArrow.png";
+
+import emailIcon from "/contactImages/mail.png";
+import penIcon from "/contactImages/pen.png";
+import profileIcon from "/contactImages/profileIcon.png";
+
+import computerGraphic from "/computerGraphic.png";
+import notificationIcons from "/notificationIcons.png";
+
+import whitePhoneIcon from "/bigSkillIcons/phone.png";
+import whiteComputerScreenIcon from "/bigSkillIcons/computerScreen.png";
+import whiteUxDesignIcon from "/bigSkillIcons/uxDesign.png";
+
+import cssIcon from "/skillIcons/cssLogo.png";
+import figmaIcon from "/skillIcons/figmaLogo.png";
+import gitIcon from "/skillIcons/gitLogo.png";
+import htmlIcon from "/skillIcons/htmlLogo.png";
+import javaIcon from "/skillIcons/javaLogo.png";
+import jsIcon from "/skillIcons/jsLogo.png";
+import nodeJsIcon from "/skillIcons/nodejsLogo.png";
+import reactIcon from "/skillIcons/react.png";
+import sqlIcon from "/skillIcons/sqlLogo.png";
+import tsIcon from "/skillIcons/tsLogo.png";
+import photoshopIcon from "/skillIcons/photoshopLogo.png";
+import illustratorIcon from "/skillIcons/illustratorLogo.png";
+
 
 function App() {
   return (
     <div id="home">
       <nav>
         <div>
-          <img src="cat-svgrepo-com.svg" alt="logo" />
+          <img src={logo} alt="logo" />
           <p>Caleb Clapper | Portfolio</p>
         </div>
-
-        <MenuDropdown />
 
         <ul>
           <a href="#home">Home</a>
@@ -33,8 +58,14 @@ function App() {
               mollitia tempora.
             </p>
           </div>
-          <img src="public\computer 3d image.png" alt="computer graphic" />
+          <img src={computerGraphic} alt="computer graphic" />
         </section>
+
+        <a href="#about">
+          <img src={downArrow} alt="arrow icon" 
+          className="arrowIcon animate__animated animate__bounce 
+          animate__infinite animate__slow"  />
+        </a>
 
         <section className="about" id="about">
           <div className="aboutText">
@@ -48,37 +79,30 @@ function App() {
           </div>
           <div className="largeSkillsContainer">
             <LargeSkillTile
-              imgSrc="/computerScreen.png"
+              imgSrc={whiteComputerScreenIcon}
               text="Web Development"
             />
             <LargeSkillTile
-              imgSrc="/uxDesign.png"
+              imgSrc={whiteUxDesignIcon}
               text="UI/UX Development & Design"
             />
-            <LargeSkillTile imgSrc="/phone.png" text="App Development" />
+            <LargeSkillTile imgSrc={whitePhoneIcon} text="App Development" />
           </div>
-          <div className="smallSkillsContainer">
-            <SmallSkillTile imgSrc="/skillIcons\react.png" text="React.js" />
-            <SmallSkillTile
-              imgSrc="/skillIcons\nodejsLogo.png"
-              text="Node.js"
-            />
-            <SmallSkillTile imgSrc="/skillIcons\jsLogo.png" text="Javascript" />
-            <SmallSkillTile imgSrc="/skillIcons\tsLogo.png" text="Typescript" />
-            <SmallSkillTile imgSrc="/skillIcons\htmlLogo.png" text="HTML" />
-            <SmallSkillTile imgSrc="/skillIcons\cssLogo.png" text="CSS" />
-            <SmallSkillTile imgSrc="/skillIcons\gitLogo.png" text="Git" />
-            <SmallSkillTile imgSrc="/skillIcons\javaLogo.png" text="Java" />
-            <SmallSkillTile imgSrc="/skillIcons\sqlLogo.png" text="SQL" />
-            <SmallSkillTile imgSrc="/skillIcons\figmaLogo.png" text="Figma" />
-            <SmallSkillTile
-              imgSrc="/skillIcons\photoshopLogo.png"
-              text="Photoshop"
-            />
-            <SmallSkillTile
-              imgSrc="/skillIcons\illustratorLogo.png"
-              text="Illustrator"
-            />
+          <div className="smallSkillsContainerCenter">
+            <div className="smallSkillsContainer">
+              <SmallSkillTile imgSrc={reactIcon} text="React.js" />
+              <SmallSkillTile imgSrc={nodeJsIcon} text="Node.js"/>
+              <SmallSkillTile imgSrc={jsIcon} text="Javascript" />
+              <SmallSkillTile imgSrc={tsIcon} text="Typescript" />
+              <SmallSkillTile imgSrc={htmlIcon} text="HTML" />
+              <SmallSkillTile imgSrc={cssIcon} text="CSS" />
+              <SmallSkillTile imgSrc={gitIcon} text="Git" />
+              <SmallSkillTile imgSrc={javaIcon} text="Java" />
+              <SmallSkillTile imgSrc={sqlIcon} text="SQL" />
+              <SmallSkillTile imgSrc={photoshopIcon} text="Photoshop" />
+              <SmallSkillTile imgSrc={illustratorIcon} text="Illustrator" />  
+              <SmallSkillTile imgSrc={figmaIcon} text="Figma" />
+            </div>
           </div>
         </section>
 
@@ -90,7 +114,7 @@ function App() {
               <div className="contactContainer">
                 <form className="contactForm">
                   <img
-                    src="contactImages/mail.png"
+                    src={emailIcon}
                     alt="email icon"
                     className="mailIcon"
                   />
@@ -107,7 +131,7 @@ function App() {
                 </form>
                 <form className="contactForm">
                   <img
-                    src="contactImages/profileIcon.png"
+                    src={profileIcon}
                     alt="profile icon"
                     className="profileIcon"
                   />
@@ -124,7 +148,7 @@ function App() {
                 </form>
                 <form className="messageForm">
                   <img
-                    src="contactImages/pen.png"
+                    src={penIcon}
                     alt="pen icon"
                     className="messageIcon"
                   />
@@ -142,7 +166,7 @@ function App() {
               </div>
             </form>
             <img
-              src="notificationIcons.png"
+              src={ notificationIcons}
               alt="notification icons"
               className="notificationIcons"
             />

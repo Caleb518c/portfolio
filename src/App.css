@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
 
 section p {
   font-size: 1.5rem;
+  box-sizing: border-box;
 }
 
 nav {
@@ -22,6 +24,7 @@ nav {
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
+  height: 80px;
 }
 
 nav div {
@@ -81,7 +84,6 @@ main {
 section {
   display: flex;
   width: 1700px;
-  border: solid red 1px;
 }
 
 .intro {
@@ -101,20 +103,31 @@ section {
 }
 
 
+.arrowIcon {
+  width: 30px;
+  margin-top: 10px;
+}
+
+
 .about {
   display: flex;
   flex-direction: column;
+  padding-top: 130px;
 }
 
 .aboutText {
   width: 40%;
-  padding: 10% 0 10% 10% ;
+  padding: 2% 0 2% 10%;
+}
+
+.aboutText p {
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .largeSkillsContainer {
   display: flex;
   justify-content: center;
-  border: solid red 1px;
 }
 
 .largeSkillTile {
@@ -122,46 +135,62 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
-  background-color: #190A24;
+  width: 235px;
+  height: 235px;
+  background-color: #2e1b43;
   padding: 20px;
   border-radius: 30px;
   text-align: center;
-  margin: 2%;
+  margin: 1%;
 }
 
 .largeSkillTile p {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 500;
+}
+
+.largeSkillTile:nth-child(2) p {
+  margin: 10px 0 -25px 0;
 }
 
 .largeSkillTile img {
   width: 100px;
+  margin: 0 0 30px 0;
+}
+
+.smallSkillsContainerCenter {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 .smallSkillsContainer {
   display: flex;
   justify-content: center;
-  border: solid red 1px;
   flex-wrap: wrap;
+  width: 80%;
 }
 
 .smallSkillTile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 120px;
   height: 120px;
-  background-color: #190A24;
+  background-color: #2e1b43;
   padding: 20px;
   border-radius: 30px;
+  margin: 10px 10px;
 }
 
 .smallSkillTile img {
-  width: 75px;
-  margin-bottom: 10px;
+  width: 60px;
+  margin: 10px 0 15px 0;
+}
+
+.smallSkillTile:last-child img {
+  width: 45px;
 }
 
 
@@ -178,6 +207,7 @@ section {
 .contact {
   display: flex;
   flex-direction: column;
+  padding-top: 130px;
 }
 
 .contact h1 {
