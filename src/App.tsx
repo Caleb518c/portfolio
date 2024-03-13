@@ -120,9 +120,17 @@ function App() {
               title="Portfolio Website"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat."
-              tagsArray={["#tag", "#otherTag", "#differentTag"]}
+              Ut labore et dolore magna aliqua."
+              tagsArray={["#React", "#Typescript",]}
+            />
+            <ProjectTile
+              imgSrc={portfolioThumnail}
+              imgAltText="portfolio website thumnail"
+              title="Typescript Chess Engine"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut labore et dolore magna aliqua."
+              tagsArray={["#Typescript", "#React", "#Chess.js"]}
             />
           </div>
         </section>

@@ -1,3 +1,7 @@
+:root {
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,6 +147,7 @@ section {
   border-radius: 30px;
   text-align: center;
   margin: 1%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .largeSkillTile p {
@@ -183,6 +188,7 @@ section {
   padding: 20px;
   border-radius: 30px;
   margin: 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .smallSkillTile img {
@@ -199,27 +205,39 @@ section {
 .projects {
   display: flex;
   flex-direction: column;
-  border: solid rgb(17, 11, 53) 1px;
+  padding-top: 130px;
+}
+
+.projects h1 {
+  padding: 0 0 2% 10%;
 }
 
 .projectTileContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .projectTile {
   width: 400px;
   background-color: #483165;
-  border-radius: 30px;
-  padding: 20px;
+  border-radius: 15px;
+  margin: 0 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .projectTile img {
   width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.projectTile div {
+  padding: 20px;
 }
 
 .projectTile p {
   font-size: 1rem;
+  margin: 10px 0;
 }
 
 .projectTile ul {
@@ -285,6 +303,7 @@ section {
   box-sizing: border-box;
   margin-left: 200px;
   margin-top: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .contactForm {
