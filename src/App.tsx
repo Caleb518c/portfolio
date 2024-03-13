@@ -1,6 +1,7 @@
 import "./App.css";
 import LargeSkillTile from "./Components/LargeSkillTile";
 import SmallSkillTile from "./Components/SmallSkillTile";
+import ProjectTile from "./Components/ProjectTile";
 
 import logo from "/cat-svgrepo-com.svg";
 import downArrow from "/downArrow.png";
@@ -29,6 +30,7 @@ import tsIcon from "/skillIcons/tsLogo.png";
 import photoshopIcon from "/skillIcons/photoshopLogo.png";
 import illustratorIcon from "/skillIcons/illustratorLogo.png";
 
+import portfolioThumnail from "/portfolioThumnail.png";
 
 function App() {
   return (
@@ -52,19 +54,22 @@ function App() {
           <div>
             <h1>Hi, I'm Caleb</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              nulla omnis qui ut quae incidunt architecto ad dolor quidem
-              placeat iusto dolorem magni, numquam est. Laborum magni quidem
-              mollitia tempora.
+              I'm a web developer who strives to create rich experiences through
+              the intersection of design and code. Fueled by creativity and my
+              hunger for a good challenge, I thrive at the intersection of
+              innovation and user-centric design.
             </p>
           </div>
           <img src={computerGraphic} alt="computer graphic" />
         </section>
 
         <a href="#about">
-          <img src={downArrow} alt="arrow icon" 
-          className="arrowIcon animate__animated animate__bounce 
-          animate__infinite animate__slow"  />
+          <img
+            src={downArrow}
+            alt="arrow icon"
+            className="arrowIcon animate__animated animate__bounce 
+          animate__infinite animate__slow animate__delay-3s"
+          />
         </a>
 
         <section className="about" id="about">
@@ -91,7 +96,7 @@ function App() {
           <div className="smallSkillsContainerCenter">
             <div className="smallSkillsContainer">
               <SmallSkillTile imgSrc={reactIcon} text="React.js" />
-              <SmallSkillTile imgSrc={nodeJsIcon} text="Node.js"/>
+              <SmallSkillTile imgSrc={nodeJsIcon} text="Node.js" />
               <SmallSkillTile imgSrc={jsIcon} text="Javascript" />
               <SmallSkillTile imgSrc={tsIcon} text="Typescript" />
               <SmallSkillTile imgSrc={htmlIcon} text="HTML" />
@@ -100,24 +105,35 @@ function App() {
               <SmallSkillTile imgSrc={javaIcon} text="Java" />
               <SmallSkillTile imgSrc={sqlIcon} text="SQL" />
               <SmallSkillTile imgSrc={photoshopIcon} text="Photoshop" />
-              <SmallSkillTile imgSrc={illustratorIcon} text="Illustrator" />  
+              {/* <SmallSkillTile imgSrc={illustratorIcon} text="Illustrator" /> */}
               <SmallSkillTile imgSrc={figmaIcon} text="Figma" />
             </div>
           </div>
         </section>
 
-        <section id="projects"></section>
+        <section id="projects" className="projects">
+          <h1>Projects</h1>
+          <div className="projectTileContainer">
+            <ProjectTile
+              imgSrc={portfolioThumnail}
+              imgAltText="portfolio website thumnail"
+              title="Portfolio Website"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat."
+              tagsArray={["#tag", "#otherTag", "#differentTag"]}
+            />
+          </div>
+        </section>
+
         <section id="contact" className="contact">
           <h1>Contact</h1>
           <div className="contactRow2">
-            <form action="submit">
+            <form action="">
               <div className="contactContainer">
                 <form className="contactForm">
-                  <img
-                    src={emailIcon}
-                    alt="email icon"
-                    className="mailIcon"
-                  />
+                  <img src={emailIcon} alt="email icon" className="mailIcon" />
                   <div>
                     <label htmlFor="email">Email</label>
                     <input
@@ -147,11 +163,7 @@ function App() {
                   </div>
                 </form>
                 <form className="messageForm">
-                  <img
-                    src={penIcon}
-                    alt="pen icon"
-                    className="messageIcon"
-                  />
+                  <img src={penIcon} alt="pen icon" className="messageIcon" />
                   <div>
                     <label htmlFor="message">Message</label>
                     <textarea
@@ -166,7 +178,7 @@ function App() {
               </div>
             </form>
             <img
-              src={ notificationIcons}
+              src={notificationIcons}
               alt="notification icons"
               className="notificationIcons"
             />

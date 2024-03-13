@@ -16,6 +16,7 @@ section p {
 
 nav {
   position: fixed;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +37,7 @@ nav div {
 
 nav div img {
   width: 3rem;
-  margin-right: 3%;
+  margin-right: .5%;
 }
 
 nav ul {
@@ -168,7 +169,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 70%;
 }
 
 .smallSkillTile {
@@ -194,6 +195,53 @@ section {
 }
 
 
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  border: solid rgb(17, 11, 53) 1px;
+}
+
+.projectTileContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectTile {
+  width: 400px;
+  background-color: #483165;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.projectTile img {
+  width: 100%;
+}
+
+.projectTile p {
+  font-size: 1rem;
+}
+
+.projectTile ul {
+
+}
+
+.projectTile ul li {
+  all: unset;
+  margin: 0 12px 0 0;
+}
+
+.projectTile ul li:nth-child(1) {
+  color: #54B7FF;
+}
+
+.projectTile ul li:nth-child(2) {
+  color: #DB49FF;
+}
+
+.projectTile ul li:nth-child(3) {
+  color: #55FFB8;
+}
 
 
 
