@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #190A24;
   color: white;
   font-size: 1.2rem;
@@ -121,7 +121,7 @@ section {
 }
 
 .aboutText {
-  width: 40%;
+  width: 50%;
   padding: 2% 0 2% 10%;
 }
 
@@ -133,6 +133,7 @@ section {
 .largeSkillsContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .largeSkillTile {
@@ -216,10 +217,13 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .projectTile {
   width: 400px;
+  height: 100%;
   background-color: #483165;
   border-radius: 15px;
   margin: 0 25px;
@@ -367,5 +371,234 @@ height: 27px;
   height: 50px;
   font-size: 1.2rem;
   font-weight: 600;
-}
+}  
+  
+  @media screen and (min-width: 1501px) and (max-width:1700px) {
+  
+    /* Lower section width */
+    section {
+      display: flex;
+      width: 1300px;
+    }
+
+    /* Increase the width to fit links */ 
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 22%;
+      list-style-type: none;
+      padding: 1%;
+      margin-right: 1%;
+    }
+
+    /* Increased width to better cover section */
+    .aboutText {
+      width: 60%;
+      padding: 2% 0 2% 10%;
+    }
+
+    /* Increased width to better cover section */
+    .smallSkillsContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+    .notificationIcons {
+      width: 10px;
+      margin-right: 150px;
+    }
+
+  }
+
+  @media screen and (min-width: 1301px) and (max-width:1500px) {
+  
+    /* Lower section width */
+    section {
+      display: flex;
+      width: 1300px;
+    }
+
+    /* Increase the width to fit links */ 
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 25%;
+      list-style-type: none;
+      padding: 1%;
+      margin-right: 1%;
+    }
+
+    /* Increased width to better cover section */
+    .aboutText {
+      width: 60%;
+      padding: 2% 0 2% 10%;
+    }
+
+    /* Increased width to better cover section */
+    .smallSkillsContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+    .notificationIcons {
+      width: 10px;
+      margin-right: 150px;
+    }
+
+  }
+
+  @media screen and (min-width: 1001px) and (max-width:1300px) {
+  
+    /* Lower section width */
+    section {
+      display: flex;
+      width: 900px;
+    }
+
+    /* Increase the width to fit links */ 
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      list-style-type: none;
+      padding: 1%;
+      margin-right: 1%;
+    }
+
+    /* Changed flex direction to column */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+    
+    /* Increased width to fit screen */
+    .intro div {
+      width: 100%;
+      padding: 10% 0 10% 10% ;
+    }
+
+    .intro div p {
+      width: 80%;
+    }
+    
+    /* Lowered top margin and increased bottom margin */
+    .intro img {
+      width: 600px;
+      height: 450px;
+      margin: 0 5% 10% 5%;
+    }
+
+
+    /* Increased width to better cover section */
+    .aboutText {
+      width: 100%;
+      padding: 2% 2% 3% 2%;
+    }
+
+    .aboutText p {
+      width: 90%;
+    }
+
+    /* Increased width to better cover section */
+    .smallSkillsContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+
+    .projects h1 {
+      padding: 0 0 2% 2%;
+    }
+
+
+    .notificationIcons {
+      width: 10px;
+      margin-right: 150px;
+    }
+
+  }
+
+  @media screen and (min-width: 701px) and (max-width:1000px) {
+  
+    /* Lower section width */
+    section {
+      display: flex;
+      width: 700px;
+      border: solid red 1px;
+    }
+
+    /* Increase the width to fit links */ 
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      list-style-type: none;
+      padding: 1%;
+      margin-right: 1%;
+    }
+
+    /* Changed flex direction to column */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+    
+    /* Increased width to fit screen */
+    .intro div {
+      width: 100%;
+      padding: 10% 0 10% 10% ;
+    }
+
+    .intro div p {
+      width: 80%;
+    }
+    
+    /* Lowered top margin and increased bottom margin */
+    .intro img {
+      width: 600px;
+      height: 450px;
+      margin: 0 5% 10% 5%;
+    }
+
+
+    /* Increased width to better cover section */
+    .aboutText {
+      width: 100%;
+      padding: 2% 2% 3% 2%;
+    }
+
+    .aboutText p {
+      width: 90%;
+    }
+
+    /* Increased width to better cover section */
+    .smallSkillsContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+
+    .projects h1 {
+      padding: 0 0 2% 2%;
+    }
+
+
+    .notificationIcons {
+      width: 10px;
+      margin-right: 150px;
+    }
+
+  }
 

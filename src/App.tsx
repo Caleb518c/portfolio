@@ -1,4 +1,7 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 import LargeSkillTile from "./Components/LargeSkillTile";
 import SmallSkillTile from "./Components/SmallSkillTile";
 import ProjectTile from "./Components/ProjectTile";
@@ -31,6 +34,7 @@ import photoshopIcon from "/skillIcons/photoshopLogo.png";
 import illustratorIcon from "/skillIcons/illustratorLogo.png";
 
 import portfolioThumnail from "/portfolioThumnail.png";
+import chessEngineThumnail from "/enoughMonkeysThumnail.png";
 
 function App() {
   return (
@@ -76,22 +80,32 @@ function App() {
           <div className="aboutText">
             <h1>About</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              nulla omnis qui ut quae incidunt architecto ad dolor quidem
-              placeat iusto dolorem magni, numquam est. Laborum magni quidem
-              mollitia tempora.
+            I'm am Informatics & Computer Science student at SUNY Albany 
+            with a concentration in interactive user experience. I am deeply 
+            passionate about web development and UI/UX development and strive 
+            to create in any and all capacities. I love to learn and am always 
+            eager for opportunities to dive into cutting-edge technologies. 
             </p>
           </div>
           <div className="largeSkillsContainer">
             <LargeSkillTile
               imgSrc={whiteComputerScreenIcon}
               text="Web Development"
+              className="largeSkillTile 
+              animate__animated animate__fadeInLeft"
             />
             <LargeSkillTile
               imgSrc={whiteUxDesignIcon}
               text="UI/UX Development & Design"
+              className="largeSkillTile 
+              animate__animated animate__fadeInLeft animate__delay-1s"
             />
-            <LargeSkillTile imgSrc={whitePhoneIcon} text="App Development" />
+            <LargeSkillTile 
+              imgSrc={whitePhoneIcon} 
+              text="App Development" 
+              className="largeSkillTile 
+              animate__animated animate__fadeInLeft animate__delay-2s"
+            />
           </div>
           <div className="smallSkillsContainerCenter">
             <div className="smallSkillsContainer">
@@ -118,13 +132,12 @@ function App() {
               imgSrc={portfolioThumnail}
               imgAltText="portfolio website thumnail"
               title="Portfolio Website"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut labore et dolore magna aliqua."
+              description="My personal portfolio, which serves as a showcase 
+              for my technical skills alongside my personal projects."
               tagsArray={["#React", "#Typescript",]}
             />
             <ProjectTile
-              imgSrc={portfolioThumnail}
+              imgSrc={chessEngineThumnail}
               imgAltText="portfolio website thumnail"
               title="Typescript Chess Engine"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
