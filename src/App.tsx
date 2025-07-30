@@ -33,8 +33,9 @@ import tsIcon from "/skillIcons/tsLogo.png";
 import photoshopIcon from "/skillIcons/photoshopLogo.png";
 import illustratorIcon from "/skillIcons/illustratorLogo.png";
 
-import portfolioThumnail from "/portfolioThumnail.png";
-import chessEngineThumnail from "/enoughMonkeysThumnail.png";
+import portfolioThumbnail from "/portfolioThumbnail.png";
+import chessEngineThumbnail from "/monkeyThumbnail.png";
+import blockadeThumbnail from "/blockadeThumbnail.png";
 
 function App() {
   return (
@@ -80,11 +81,11 @@ function App() {
           <div className="aboutText">
             <h1>About</h1>
             <p>
-            I'm am Informatics & Computer Science student at SUNY Albany 
-            with a concentration in interactive user experience. I am deeply 
-            passionate about web development and UI/UX development and strive 
-            to create in any and all capacities. I love to learn and am always 
-            eager for opportunities to dive into cutting-edge technologies. 
+              I'm am Informatics graduate from SUNY Albany with a concentration
+              in interactive user experience. I am deeply passionate about web
+              development and UI/UX development and strive to create in any and
+              all capacities. I love to learn and am always eager for
+              opportunities to dive into cutting-edge technologies.
             </p>
           </div>
           <div className="largeSkillsContainer">
@@ -100,9 +101,9 @@ function App() {
               className="largeSkillTile 
               animate__animated animate__fadeInLeft animate__delay-1s"
             />
-            <LargeSkillTile 
-              imgSrc={whitePhoneIcon} 
-              text="App Development" 
+            <LargeSkillTile
+              imgSrc={whitePhoneIcon}
+              text="App Development"
               className="largeSkillTile 
               animate__animated animate__fadeInLeft animate__delay-2s"
             />
@@ -128,23 +129,39 @@ function App() {
         <section id="projects" className="projects">
           <h1>Projects</h1>
           <div className="projectTileContainer">
-            <ProjectTile
-              imgSrc={portfolioThumnail}
-              imgAltText="portfolio website thumnail"
-              title="Portfolio Website"
-              description="My personal portfolio, which serves as a showcase 
+            <a href="https://caleb518c.github.io/portfolio/">
+              <ProjectTile
+                imgSrc={portfolioThumbnail}
+                imgAltText="portfolio website thumbnail"
+                title="Portfolio Website"
+                description="My personal portfolio, which serves as a showcase 
               for my technical skills alongside my personal projects."
-              tagsArray={["#React", "#Typescript",]}
-            />
-            <ProjectTile
-              imgSrc={chessEngineThumnail}
-              imgAltText="portfolio website thumnail"
-              title="Typescript Chess Engine"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut labore et dolore magna aliqua."
-              tagsArray={["#Typescript", "#React", "#Chess.js"]}
-            />
+                tagsArray={["#React", "#Typescript"]}
+              />
+            </a>
+            <a href="https://nicyran.itch.io/blockade">
+              <ProjectTile
+                imgSrc={blockadeThumbnail}
+                imgAltText="blockade banner"
+                title="Blockade"
+                description='🎉🏅 1st Place Winner of 2024 UAlbany IEEE Hack-A-Damien Hackathon 2024 🏅🎉 
+              Blockade is a fast-paced survival game created during the 24-hour 
+              IEEE Hack-A-Damien Hackathon under the theme "Same Level, 
+              Different Challenges."'
+                tagsArray={["#Godot", "#GDScript", "#GitHub"]}
+              />
+            </a>
+            <a href="https://caleb518c.github.io/chess/">
+              <ProjectTile
+                imgSrc={chessEngineThumbnail}
+                imgAltText="enough monkeys thumbnail"
+                title="Enough Monkeys"
+                description="Enough Monkeys is a chess engine written from scratch in React 
+                and Typescript. The chessboard GUI was built using react-chessboard and the 
+                game logic was built using chess.ts."
+                tagsArray={["#Typescript", "#React", "#Node.js"]}
+              />
+            </a>
           </div>
         </section>
 

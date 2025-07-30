@@ -222,6 +222,8 @@ section {
 }
 
 .projectTile {
+  color: white;
+  cursor: pointer;
   width: 400px;
   height: 100%;
   background-color: #483165;
